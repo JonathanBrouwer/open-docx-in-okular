@@ -1,0 +1,13 @@
+[Desktop Entry]
+Comment=
+Exec="open-docx"
+GenericName=
+MimeType=application/vnd.openxmlformats-officedocument.wordprocessingml.document
+Name=Open Docx in Okular
+NoDisplay=false
+Path=
+StartupNotify=true
+Terminal=false
+TerminalOptions=
+Type=Application
+

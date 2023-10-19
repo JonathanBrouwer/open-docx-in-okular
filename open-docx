@@ -1,0 +1,10 @@
+#!/bin/bash
+
+NAME=$(uuidgen)
+
+mkdir -p /tmp/open-docx &&
+cp $1 /tmp/open-docx/$NAME.docx &&
+soffice --headless --convert-to pdf --outdir /tmp/open-docx /tmp/open-docx/$NAME.docx &&
+rm /tmp/open-docx/$NAME.docx &&
+okular /tmp/open-docx/$NAME.pdf &&
+rm /tmp/open-docx/$NAME.pdf
